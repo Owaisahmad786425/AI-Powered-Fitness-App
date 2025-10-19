@@ -21,6 +21,7 @@ public class ActivityService {
     private final KafkaTemplate<String,Activity> kafkaTemplate;
     @Value("${kafka.topic.name}")
     private String topicName;
+
     public ActivityResponse trackActivity(ActivityRequest request){
 
         boolean isValidUser=userValidationService.validateUser(request.getUserId());

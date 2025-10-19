@@ -17,11 +17,11 @@ public class UserValidationService {
         try {
 
 
-            return userServiceWebClient.get()
+            return Boolean.TRUE.equals(userServiceWebClient.get()
                     .uri("/api/users/{userId}/validate", userId)
                     .retrieve()
                     .bodyToMono(Boolean.class)
-                    .block();
+                    .block());
         }
         catch (WebClientResponseException e){
             e.printStackTrace();
