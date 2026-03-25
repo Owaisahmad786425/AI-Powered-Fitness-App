@@ -10,8 +10,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="configserver" />
         <module name="activityservice" />
-        <module name="eureka" />
         <module name="gateway" />
+        <module name="eureka" />
       </profile>
       <profile name="Annotation profile for userservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
