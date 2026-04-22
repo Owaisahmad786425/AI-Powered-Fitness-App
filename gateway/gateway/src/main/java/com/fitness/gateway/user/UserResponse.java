@@ -1,9 +1,9 @@
-package com.fitness.userservice.dto;
+package com.fitness.gateway.user;
 
 
+import lombok.Data;
 
 import java.time.LocalDateTime;
-import lombok.Data;
 
 @Data
 public class UserResponse {

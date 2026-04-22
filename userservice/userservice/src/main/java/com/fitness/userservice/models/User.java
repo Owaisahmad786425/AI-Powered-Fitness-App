@@ -13,7 +13,7 @@ public class User {
     @Id   // ✅ now JPA will detect it
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-
+    private String keycloackId;
     @Column(unique = true)
     private String email;
 

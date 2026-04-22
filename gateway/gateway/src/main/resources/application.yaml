@@ -1,4 +1,10 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8181/realms/ftiness-app/protocol/openid-connect/certs
+
   application:
     name: api-gateway
   cloud:
@@ -19,7 +25,7 @@ spring:
           predicates:
             - Path=/api/recommendations/**
 server:
-  port: 8085
+  port: 8080
 
 eureka:
   client:
