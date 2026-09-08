@@ -24,7 +24,7 @@ eureka:
 gemini:
   api:
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent
-    key: AIzaSyAqEZAgkxcNsq1bwirJZeQ9eNY4Ms95s2g
+    key: ${GEMINI_API_KEY}
 
 kafka:
   topic:
